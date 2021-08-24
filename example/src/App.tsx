@@ -42,6 +42,7 @@ import SlideFromRightIOSV4 from "./tests/SlideFromRightIOS.v4";
 import TextInputStackV4 from "./tests/TextInputStack.v4";
 import WrongIds from "./tests/WrongIds";
 import WrongIdsV4 from "./tests/WrongIds.v4";
+import SafeAreaView from "./tests/SafeAreaView";
 
 if (Platform.OS === "android") {
   StatusBar.setTranslucent(true);
@@ -131,6 +132,7 @@ export default () => (
       />
       <Test title="WrongIds" ComponentV4={WrongIdsV4} Component={WrongIds} />
       <Test title="TextInput" ComponentV4={TextInputStackV4} />
+      <Test title="SafeAreaView" Component={SafeAreaView} />
     </Tests>
   </SafeAreaProvider>
 );
